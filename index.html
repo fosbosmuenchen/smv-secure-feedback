@@ -23,10 +23,277 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <h1>It Works!</h1>
+    <div class="content">
+        <div class="container text-center justify-content-center">
+            <div class="container heading-container">
+                <h1>SMV Secure Feedback Form</h1>
+            </div>
+            <div class="container description-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo earum ab tempora expedita ut, accusantium natus impedit distinctio? Assumenda accusantium earum voluptatibus in mollitia est ad maxime repellat porro veniam!
+                </p>
+            </div>
+            <div class="container form-container">
+                <form action="">
+                    <div class="container-md form-content-container">
+                        <div class="form-section" id="name-input-container">
+                            <h4 class="form-section-heading">Wie lautet Ihr Vor- und Nachname?</h4>
+                            <label id="surname-input-label" for="surname-input" class="form-text-label" aria-label="Nachname: ">Nachname:
+                            </label>
+                            <input type="text" class="form-text-input" name="surname-input" id="surname-input" placeholder="Nachname" aria-placeholder="Nachname" aria-labelledby="surname-input-label">
+                            <label id="name-input-label" for="name-input" class="form-text-label" aria-label="Vorname: ">Vorname:
+                            </label>
+                            <input type="text" class="form-text-input" name="name-input" id="name-input" placeholder="Vorname" aria-placeholder="Vorname" aria-labelledby="name-input-label">
+                        </div>
+                        <div class="form-section" id="involved-container">
+                            <h4 class="form-section-heading">Sind nur Sie involviert?</h4>
+                            <input class="form-check-input" type="radio" name="involved-alone-true" id="involved-alone-true">
+                            <label class="form-check-label" for="involved-alone-true">
+                                Ja
+                            </label>
+                            <input class="form-check-input" type="radio" name="involved-alone-false" id="involved-alone-false">
+                            <label class="form-check-label" for="involved-alone-false">
+                                Nein (siehe Unten)
+                            </label>
+                        </div>
+                        <div class="form-section" id="involved-details-container">
+                            <h4 class="form-section-heading">Wenn nein, wer ist noch Beteiligt?</h4>
+                            <p class="form-section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, quisquam aliquid. Placeat animi dolorum vitae alias, nam quidem. Sequi ea libero provident mollitia maxime incidunt.</p>
+                            <textarea class="form-textarea-input" name="involved-details-input" id="involved-details-input" placeholder="Weitere Beteiligte&#10;z.B. Hr. Mustermann, Fr. Musterfrau" aria-placeholder="Weitere Beteiligte" aria-labelledby="involved-details-input-label"
+                                rows="3" cols="35"></textarea>
+                        </div>
+                        <div class="form-section" id="class-container">
+                            <h4 class="form-section-heading">In welcher Klasse sind Sie?</h4>
+                            <label id="class-input-label" for="class-input" class="form-text-label" aria-label="Klasse: ">Klasse:
+                            </label>
+                            <input type="text" class="form-text-input" name="class-input" id="class-input" placeholder="z.B.: VKL-F1, A12b, 13-01" aria-placeholder="zum Beispiel: T11a, VKL-F1, A12b, 11-02" aria-labelledby="class-input-label">
+                        </div>
+                        <div class="form-section" id="date-conatiner">
+                            <h4 class="form-section-heading">Wann ereignete sich der Vorfall?</h4>
+                            <label for="date-input" id="date-input-label" class="form-date-label" aria-label="Datum">Datum: </label>
+                            <input type="date" class="form-date-input" name="date-input" id="date-input">
+                        </div>
+                        <div class="form-section" id="hour-container">
+                            <h4 class="form-section-heading">In welcher Schulstunde ereignete sich der Vorfall?</h4>
+                            <select class="form-select-input" name="hour-select" id="hour-select">
+                                <option selected>Wählen Sie die Schulstunde</option>
+                                <option value="hour1">1. Stunde</option>
+                                <option value="hour2">2. Stunde</option>
+                                <option value="hour3">3. Stunde</option>
+                                <option value="hour4">4. Stunde</option>
+                                <option value="hour5">5. Stunde</option>
+                                <option value="hour6">6. Stunde</option>
+                                <option value="hour7">7. Stunde</option>
+                                <option value="hour8">8. Stunde</option>
+                                <option value="hour9">9. Stunde</option>
+                                <option value="hour10">10. Stunde</option>
+                            </select>
+                        </div>
+                        <div class="form-section" id="lesson-container">
+                            <h4 class="form-section-heading">In Welchem Schulfach ereignete sich der Vorfall?</h4>
+                            <select class="form-select-input" name="hour-select" id="hour-select">
+                                <option selected>Wählen Sie das Schulfach</option>
+                                <option value="lessontype1" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option1">Aspekte der
+                                    Biologie (B-A)</option>
+                                <option value="lessontype2" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option2">Aspekte der
+                                    Psychologie (PsA)</option>
+                                <option value="lessontype3" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option3">
+                                    Betriebwirtschaft-Rechnungswesen (BwR)</option>
+                                <option value="lessontype4" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option4">Biologie (Bio)
+                                </option>
+                                <option value="lessontype5" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option5">Biologie Übung
+                                    (B-Üb)</option>
+                                <option value="lessontype6" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option6">Biotechnologie
+                                    (Bte)</option>
+                                <option value="lessontype7" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option7">Chemie (C)
+                                </option>
+                                <option value="lessontype8" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option8">Chemie-Übung
+                                    (C-Üb)</option>
+                                <option value="lessontype9" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option9">
+                                    D-Förderunterricht (D-Fö)</option>
+                                <option value="lessontype10" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option10">Deutsch (D)
+                                </option>
+                                <option value="lessontype11" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option11">
+                                    Einzelförderstunde (FöSt)</option>
+                                <option value="lessontype12" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option12">Englisch (E)
+                                </option>
+                                <option value="lessontype13" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option13">
+                                    Englisch-Cambridge (Wf EC)</option>
+                                <option value="lessontype14" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option14">
+                                    Englisch-Übung (E-Üb)</option>
+                                <option value="lessontype15" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option15">English Book
+                                    Club (EBC)</option>
+                                <option value="lessontype16" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option16">Ethik (Eth)
+                                </option>
+                                <option value="lessontype17" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option17">Französisch
+                                    (F)</option>
+                                <option value="lessontype18" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option18">FörderU
+                                    Biologie (FöB)</option>
+                                <option value="lessontype19" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option19">FörderU
+                                    Deutsch (FöD)</option>
+                                <option value="lessontype20" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option20">FörderU
+                                    Englisch (FöE)</option>
+                                <option value="lessontype21" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option21">FörderU
+                                    Mathematik (FöM)</option>
+                                <option value="lessontype22" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option22">FörderU
+                                    Physik (FöPh)</option>
+                                <option value="lessontype23" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option23">Geschichte
+                                    (G)</option>
+                                <option value="lessontype24" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option24">Geschichte /
+                                    Sozialkunde (GSk)</option>
+                                <option value="lessontype25" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option25">Geschichte,
+                                    Politik und Gesellschaft (GPG)</option>
+                                <option value="lessontype26" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option26">Informatik
+                                    (Inf)</option>
+                                <option value="lessontype27" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option27">
+                                    International Business Studies (IBS)</option>
+                                <option value="lessontype28" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option28">
+                                    Internationale Politik (IPo)</option>
+                                <option value="lessontype29" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option29">Latein (L)
+                                </option>
+                                <option value="lessontype30" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option30">Mathematik
+                                    (M)</option>
+                                <option value="lessontype31" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option31">Mathematik
+                                    Additum (M+T)</option>
+                                <option value="lessontype32" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option32">
+                                    Naturwissenschaften (Nw)</option>
+                                <option value="lessontype33" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option33">Physik (Ph)
+                                </option>
+                                <option value="lessontype34" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option34">Physik-Übung
+                                    (Ph-Üb)</option>
+                                <option value="lessontype35" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option35">
+                                    Physik/Chemie/Biologie (PCB)</option>
+                                <option value="lessontype36" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option36">Politik und
+                                    Gesellschaft (PuG)</option>
+                                <option value="lessontype37" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option37">Rechtslehre
+                                    (Rl)</option>
+                                <option value="lessontype38" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option38">Religion ev.
+                                    (R EV)</option>
+                                <option value="lessontype39" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option39">Religion
+                                    kath. (R K)</option>
+                                <option value="lessontype40" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option40">Seminar
+                                    (Sem)</option>
+                                <option value="lessontype41" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option41">Sozialkunde
+                                    (SK)</option>
+                                <option value="lessontype42" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option42">
+                                    Sozialkunde/Politik (SkP)</option>
+                                <option value="lessontype43" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option43">Soziologie
+                                    (Soz)</option>
+                                <option value="lessontype44" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option44">Spanisch
+                                    (Sp1)</option>
+                                <option value="lessontype45" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option45">Spanisch
+                                    Klasse NICHT Wpf (Sp)</option>
+                                <option value="lessontype46" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option46">Sport (S)
+                                </option>
+                                <option value="lessontype47" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option47">Sport
+                                    koedukativ (Smw)</option>
+                                <option value="lessontype48" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option48">TTPRG-AG
+                                    (TTPRG-AG)</option>
+                                <option value="lessontype49" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option49">Technisches
+                                    Zeichnen (TZ)</option>
+                                <option value="lessontype50" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option50">Technologie
+                                    (Te)</option>
+                                <option value="lessontype51" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option51">Technologie
+                                    Übung (Te-Üb)</option>
+                                <option value="lessontype52" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option52">
+                                    Volkswirtschaftslehre (VWl)</option>
+                                <option value="lessontype53" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option53">Wahlpflicht
+                                    Biologie (Wpf Bio)</option>
+                                <option value="lessontype54" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option54">Wahlpflicht
+                                    E (Wpf E)</option>
+                                <option value="lessontype55" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option55">Wahlpflicht
+                                    Physik (Wpf Ph)</option>
+                                <option value="lessontype56" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option56">
+                                    Wahlpflichtfach Deutsch 11 Jgst. (Wpf D)</option>
+                                <option value="lessontype57" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option57">
+                                    Wahlunterricht Mathematik (WahlM)</option>
+                                <option value="lessontype58" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option58">Wirtschaft
+                                    und Recht (WR)</option>
+                                <option value="lessontype59" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option59">Wpf
+                                    Mathematik 11 Jgst. (Wpf M)</option>
+                                <option value="lessontype60" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option60">fachprakt.
+                                    Anleitung (fPA)</option>
+                                <option value="lessontype61" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option61">fachprakt.
+                                    Betreuung (fpT)</option>
+                                <option value="lessontype62" class="select-option select-lessontype-option"
+                                    id="select-lessontype-option62">fachprakt.
+                                    Vertiefung (FPV)</option>
 
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/site.js"></script>
+
+                            </select>
+                        </div>
+                        <div class="form-section" id="event-details-container">
+                            <h4 class="form-section-heading">Erläutern Sie die Geschehnisse nun genauer:</h4>
+                            <textarea class="form-textarea-input" name="event-details-input" id="event-details-input" placeholder="Erläuterung der Geschehnisse" aria-placeholder="Erläuterung der Geschehnisse" aria-labelledby="event-details-input-label" rows="3" cols="35"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src=" ./assets/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="./assets/js/site.js "></script>
 </body>
 
 </html>
