@@ -33,7 +33,7 @@
                 </p>
             </div>
             <div class="container form-container">
-                <form action="">
+                <form name="feedback-form" id="feedback-form-element" action="">
                     <div class="container-md form-content-container">
                         <div class="form-section" id="name-input-container">
                             <h4 class="form-section-heading">Wie lautet Ihr Vor- und Nachname?</h4>
@@ -46,14 +46,18 @@
                         </div>
                         <div class="form-section" id="involved-container">
                             <h4 class="form-section-heading">Sind nur Sie involviert?</h4>
-                            <input class="form-check-input" type="radio" name="involved-alone-true" id="involved-alone-true">
-                            <label class="form-check-label" for="involved-alone-true">
-                                Ja
-                            </label>
-                            <input class="form-check-input" type="radio" name="involved-alone-false" id="involved-alone-false">
-                            <label class="form-check-label" for="involved-alone-false">
-                                Nein (siehe Unten)
-                            </label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="involved-alone" value="involved-alone-true" id="involved-alone-true">
+                                <label class="form-check-label" for="involved-alone-true">
+                                    Ja
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="involved-alone" value="involved-alone-false" id="involved-alone-false">
+                                <label class="form-check-label" for="involved-alone-false">
+                                    Nein (siehe Unten)
+                                </label>
+                            </div>
                         </div>
                         <div class="form-section" id="involved-details-container">
                             <h4 class="form-section-heading">Wenn nein, wer ist noch Beteiligt?</h4>
@@ -90,7 +94,7 @@
                         </div>
                         <div class="form-section" id="lesson-container">
                             <h4 class="form-section-heading">In Welchem Schulfach ereignete sich der Vorfall?</h4>
-                            <select class="form-select-input" name="hour-select" id="hour-select">
+                            <select class="form-select-input" name="lesson-select" id="lesson-select">
                                 <option selected>Wählen Sie das Schulfach</option>
                                 <option value="lessontype1" class="select-option select-lessontype-option"
                                     id="select-lessontype-option1">Aspekte der
@@ -286,14 +290,31 @@
                             <h4 class="form-section-heading">Erläutern Sie die Geschehnisse nun genauer:</h4>
                             <textarea class="form-textarea-input" name="event-details-input" id="event-details-input" placeholder="Erläuterung der Geschehnisse" aria-placeholder="Erläuterung der Geschehnisse" aria-labelledby="event-details-input-label" rows="3" cols="35"></textarea>
                         </div>
+                        <div class="form-section" id="privacy-notice-container">
+                            <p class="form-section-descripton">Bitte lesen Sie die <a href="./privacy/" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> und akzeptieren Sie diese, um mit der Verwendung des Tools fortzufahren.</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="privacy-checkbox" id="privacy-notice-accepted-box">
+                                <label for="privacy-notice-accepted-box" id="privacy-notice-accepted-box-label" class="form-check-label">Ich habe die
+                                    Datenschutzerklärung gelesen und akzeptiere
+                                    diese.</label>
+                            </div>
+                        </div>
+                        <div class="form-section" id="form-control-button-container">
+                            <button id="form-control-button-reset" type="reset" class="btn btn-danger btn-block">
+                                <i class="fa-solid fa-trash"></i> Eingaben löschen
+                            </button>
+                            <button id="form-control-button-submit" type="submit" class="btn btn-success btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Daten Senden
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src=" ./assets/bootstrap/js/bootstrap.bundle.min.js "></script>
     <script src="./assets/js/site.js "></script>
+    <script src=" ./assets/bootstrap/js/bootstrap.bundle.min.js "></script>
 </body>
 
 </html>
